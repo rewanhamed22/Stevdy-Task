@@ -21,25 +21,27 @@
       <div class="container">
         <nav>
           <!-- <h1>ST v DY</h1> -->
-          <div class="logo"><a href="#">STvDY</a></div>
+          <div class="logo"><a href="#">ST v DY</a></div>
           <ul class="links">
             <li><a href="#">Browser</a></li>
             <li><a href="#">Bootcamps</a></li>
             <li><a href="#">How it Works</a></li>
             <li><a href="#">Testimonial</a></li>
           </ul>
-          <div class="button">
-            <a href="#">About us</a>
-          </div>
+          <button class="button">About Us</button>
+
           <div class="toggle-btn">
             <i class="fa-solid fa-bars"></i>
           </div>
-          <!-- <ul class="toggle-links">
+          <ul class="dropdown-menu">
             <li><a href="#">Browser</a></li>
             <li><a href="#">Bootcamps</a></li>
             <li><a href="#">How it Works</a></li>
             <li><a href="#">Testimonial</a></li>
-          </ul> -->
+            <li>
+              <button class="button">About Us</button>
+            </li>
+          </ul>
         </nav>
 
         <div class="header">
@@ -237,9 +239,7 @@
               dolores et ea rebum.<br />
               Stet clita kasd gubergren, no sea takimata sanctus est Lorem
             </p>
-            <div class="button">
-              <a href="#">About us</a>
-            </div>
+            <button class="button">About us</button>
           </div>
           <div class="two">
             <div class="market">
@@ -313,10 +313,13 @@
     <!-- Start Testimonial -->
     <section>
       <div class="testimonial">
-      <div class="container">
+        <div class="container">
           <div class="card-2">
             <div class="image2">
-              <img src="https://images.pexels.com/photos/1572878/pexels-photo-1572878.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Profile Image" />
+              <img
+                src="https://images.pexels.com/photos/1572878/pexels-photo-1572878.jpeg?auto=compress&cs=tinysrgb&w=600"
+                alt="Profile Image"
+              />
             </div>
             <div class="info">
               <div class="name">Florrie Jacobs</div>
@@ -325,8 +328,17 @@
                 Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
                 diam nonumy eirmod tempor invidunt ut labore et dolore
               </p>
+              <div class="icons">
+                <span><i class="fa-solid fa-star"></i></span>
+                <span><i class="fa-solid fa-star"></i></span>
+                <span><i class="fa-solid fa-star"></i></span>
+                <span><i class="fa-solid fa-star"></i></span>
+                <span><i class="fa-solid fa-star"></i></span>
+              </div>
             </div>
           </div>
+          <img src="/images/Group2.svg" alt="f" class="bullets" />
+
           <div class="one">
             <div class="acc">
               Grow Your Business and <br />Join Our Happy Users
@@ -338,7 +350,7 @@
               dolores et ea rebum.<br />
               Stet clita kasd gubergren, no sea takimata sanctus est Lorem
             </p>
-          <button class="button">About Us</button>
+            <button class="button">About Us</button>
           </div>
         </div>
       </div>
@@ -367,12 +379,7 @@
           </div>
           <div class="secThree">
             <div class="serv">Sign Up for Special Offers!</div>
-            <!-- <div class="subscribe-button">
-              Mail
-            </div>
-            <div class="special-button">
-               Subscribe
-            </div> -->
+
             <form>
               <input type="text" placeholder="Mail" />
               <button type="button" class="fill-btn">Subscribe</button>
@@ -382,5 +389,19 @@
       </div>
     </footer>
     <!-- End Footer -->
+    <script>
+      const toggleBtn = document.querySelector(".toggle-btn");
+      const toggleBtnIcon = document.querySelector(".toggle-btn i");
+      const dropDownMenu = document.querySelector(".dropdown-menu");
+
+      toggleBtn.addEventListener("click", () => {
+        dropDownMenu.classList.toggle("open");
+        console.log("object");
+        const isOpen = dropDownMenu.classList.contains("open");
+        toggleBtnIcon.classList = isOpen
+          ? "fa-solid fa-xmark"
+          : " fa-solid fa-bars";
+      });
+    </script>
   </body>
 </html>
