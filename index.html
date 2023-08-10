@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Stevdy</title>
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/style.quries.css" />
 
     <!-- Font Awesome Library -->
     <link rel="stylesheet" href="css/all.min.css" />
@@ -389,19 +390,6 @@
       </div>
     </footer>
     <!-- End Footer -->
-    <script>
-      const toggleBtn = document.querySelector(".toggle-btn");
-      const toggleBtnIcon = document.querySelector(".toggle-btn i");
-      const dropDownMenu = document.querySelector(".dropdown-menu");
-
-      toggleBtn.addEventListener("click", () => {
-        dropDownMenu.classList.toggle("open");
-        console.log("object");
-        const isOpen = dropDownMenu.classList.contains("open");
-        toggleBtnIcon.classList = isOpen
-          ? "fa-solid fa-xmark"
-          : " fa-solid fa-bars";
-      });
-    </script>
+    <script src="./script.js"></script>
   </body>
 </html>
