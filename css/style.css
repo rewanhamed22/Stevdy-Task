@@ -12,6 +12,7 @@
 }
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 body {
   font-family: "Poppins", sans-serif;
@@ -250,8 +251,6 @@ hr {
 }
 .section-solution.rec {
   margin: 250px auto;
-  overflow-x: hidden;
-
 }
 .section-solution.rec::before {
   content: " ";
