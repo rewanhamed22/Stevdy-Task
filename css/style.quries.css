@@ -64,7 +64,7 @@
   }
   .sponsers {
     padding-top: 30px;
-    margin-bottom: 30px ;
+    margin-bottom: 30px;
   }
   .section-solution {
     flex-direction: column;
@@ -273,6 +273,12 @@
     height: 90%;
     top: 40%;
     right: -1300px;
+  }
+  .button {
+    margin-top: 80px;
+  }
+  nav .button {
+    margin-top: 0;
   }
 }
 @media (min-width: 769px) and (max-width: 1200px) {
