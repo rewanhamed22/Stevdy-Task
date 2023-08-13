@@ -250,6 +250,8 @@ hr {
 }
 .section-solution.rec {
   margin: 250px auto;
+  overflow-x: hidden;
+
 }
 .section-solution.rec::before {
   content: " ";
